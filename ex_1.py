@@ -40,25 +40,23 @@ def procesar_estudiantes():
             print(f"Error al procesar datos del estudiante {i+1}: {e}")
             continue
             
-            if carrera_est == 2:
-                suma_edad_cont += edad_est
-                cant_cont += 1
-                
-            if sexo_est == 1 and carrera_est == 1:
-                cant_hom_ing += 1
-                
-            if sexo_est == 2 and edad_est < 20:
-                cant_muj_menor_20 += 1
-                
-            if sexo_est == 2 and carrera_est == 1:
-                suma_edad_muj_ing += edad_est
-                cant_muj_ing += 1
-                
-            if sexo_est == 1 and edad_est > 22 and carrera_est == 3 and jornada_est == 2:
-                cant_hom_der_noc += 1
-        except ValueError:
-            print(f"Error: Datos inválidos para el estudiante {i+1}. Saltando...")
-            continue
+        if carrera_est == 2:
+            suma_edad_cont += edad_est
+            cant_cont += 1
+            
+        if sexo_est == 1 and carrera_est == 1:
+            cant_hom_ing += 1
+            
+        if sexo_est == 2 and edad_est < 20:
+            cant_muj_menor_20 += 1
+            
+        if sexo_est == 2 and carrera_est == 1:
+            suma_edad_muj_ing += edad_est
+            cant_muj_ing += 1
+            
+        if sexo_est == 1 and edad_est > 22 and carrera_est == 3 and jornada_est == 2:
+            cant_hom_der_noc += 1
+            
 
     if EST_n == 0:
         print("Error: No se procesaron estudiantes válidos")

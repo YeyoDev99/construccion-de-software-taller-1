@@ -1,0 +1,310 @@
+================================================================================
+Autor: Yader Ibraldo Quiroga Torres - 20222020034
+================================================================================
+
+================================================================================
+EX_1.PY - PROCESAR ESTUDIANTES
+================================================================================
+
+Ingrese la cantidad de estudiantes (N): 5
+
+Estudiante 1:
+Edad: 22
+Sexo (1. Masculino; 2. Femenino): 1
+Carrera (1. Ingeniería; 2. Contaduría; 3. Derecho; 4. Otra): 1
+Jornada (1. Diurna; 2. Nocturna): 1
+
+Estudiante 2:
+Edad: 19
+Sexo (1. Masculino; 2. Femenino): 2
+Carrera (1. Ingeniería; 2. Contaduría; 3. Derecho; 4. Otra): 2
+Jornada (1. Diurna; 2. Nocturna): 1
+
+Estudiante 3:
+Edad: 25
+Sexo (1. Masculino; 2. Femenino): 1
+Carrera (1. Ingeniería; 2. Contaduría; 3. Derecho; 4. Otra): 2
+Jornada (1. Diurna; 2. Nocturna): 2
+
+Estudiante 4:
+Edad: 23
+Sexo (1. Masculino; 2. Femenino): 2
+Carrera (1. Ingeniería; 2. Contaduría; 3. Derecho; 4. Otra): 1
+Jornada (1. Diurna; 2. Nocturna): 1
+
+Estudiante 5:
+Edad: 24
+Sexo (1. Masculino; 2. Femenino): 1
+Carrera (1. Ingeniería; 2. Contaduría; 3. Derecho; 4. Otra): 3
+Jornada (1. Diurna; 2. Nocturna): 2
+
+RESULTADO ESPERADO:
+a) Promedio de edad estudiantes de Contaduría: 24.00
+b) Porcentaje de hombres en Ingeniería: 40.00%
+c) Porcentaje de mujeres menores a 20 años: 20.00%
+d) Promedio de edad mujeres en Ingeniería: 23.00
+e) Porcentaje hombres > 22 años en Derecho nocturno: 20.00%
+
+================================================================================
+EX_2.PY - PROCESAR FUMIGACION
+================================================================================
+Descripción: Calcula el valor a pagar por fumigación con descuentos por hectáreas y por exceso
+
+DATOS DE PRUEBA:
+
+Ingrese la cantidad de pedidos: 3
+
+Pedido 1:
+Nombre del granjero: Juan Pérez
+Tipo de fumigación (1, 2, 3, 4): 1
+Número de hectáreas: 50
+
+Pedido 2:
+Nombre del granjero: María García
+Tipo de fumigación (1, 2, 3, 4): 4
+Número de hectáreas: 1200
+
+Pedido 3:
+Nombre del granjero: Carlos López
+Tipo de fumigación (1, 2, 3, 4): 3
+Número de hectáreas: 100
+
+RESULTADO ESPERADO:
+Pedido 1: Valor a pagar: 500.00
+Pedido 2: Valor a pagar: 32850.00 (descuento por hectáreas + descuento por exceso)
+Pedido 3: Valor a pagar: 1810.00 (descuento por exceso)
+
+================================================================================
+EX_3.PY - CALCULAR NOMINA MOLINA
+================================================================================
+Descripción: Calcula salario bruto, retención y neto con recargo por horas extras
+
+DATOS DE PRUEBA:
+
+Código del trabajador: 101
+Nombre del trabajador: Roberto Martínez
+Sexo (M/F): M
+Número de horas trabajadas: 280
+Tarifa hora normal: 5000
+
+RESULTADO ESPERADO:
+Código: 101
+Nombre: Roberto Martínez
+Salario Bruto: 1522500.00
+Retención: 76125.00
+Sexo: M
+Salario Neto: 1446375.00
+
+(Note: Con 280 horas, hay un recargo de 2.5x por horas entre 240-299)
+
+================================================================================
+EX_4.PY - CALCULAR RETENCION SUBSIDIO
+================================================================================
+Descripción: Calcula devengado, retención según hijos y subsidio familiar
+
+DATOS DE PRUEBA:
+
+Código del empleado: 205
+Nombres del empleado: Ana Rodríguez
+Número de hijos: 3
+Salario por hora: 15000
+Número de horas trabajadas al mes: 160
+
+RESULTADO ESPERADO:
+Código: 205
+Nombres: Ana Rodríguez
+Devengado: 2400000.00
+Retención: 120000.00 (5% porque devengado > 428000 y hijos < 5)
+Subsidio: 51600.00 (3 hijos × 17200)
+Total a pagar: 2331600.00
+
+================================================================================
+EX_5.PY - CALCULAR COMISIONES CONCORDIA
+================================================================================
+Descripción: Calcula comisión total por ventas con porcentajes variables
+
+DATOS DE PRUEBA:
+
+Ingrese el ID del vendedor: 1001
+Ingrese el nombre del vendedor: Carlos Velázquez
+Ingrese la cantidad de ventas realizadas (N): 4
+
+Artículo 1 - Precio: 80000
+Artículo 2 - Precio: 150000
+Artículo 3 - Precio: 100000
+Artículo 4 - Precio: 120000
+
+RESULTADO ESPERADO:
+Vendedor: Carlos Velázquez (ID: 1001)
+Comisión total por las 4 ventas: 38500.00
+
+(80000×0.10 + 150000×0.07 + 100000×0.10 + 120000×0.07 = 8000 + 10500 + 10000 + 8400)
+
+================================================================================
+EX_6.PY - DETERMINAR RESULTADO ELECCION
+================================================================================
+Descripción: Determina ganador de elección o segunda vuelta
+
+DATOS DE PRUEBA 1 (Hay ganador claro):
+
+Votos obtenidos por Juan: 150
+Votos obtenidos por Pedro: 100
+Votos obtenidos por Maria: 50
+
+RESULTADO ESPERADO:
+Total de votos: 300
+Resultado: Ganador: Juan
+
+(Juan tiene 150, necesita 151 para mayoría, pero como el ejercicio usa >50%...)
+
+DATOS DE PRUEBA 2 (Segunda vuelta):
+
+Votos obtenidos por Juan: 80
+Votos obtenidos por Pedro: 70
+Votos obtenidos por Maria: 50
+
+RESULTADO ESPERADO:
+Total de votos: 200
+Resultado: Segunda vuelta entre: Juan y Pedro
+
+================================================================================
+EX_7.PY - PROCESAR ACCIDENTES MEDELLIN
+================================================================================
+Descripción: Calcula porcentajes de conductores según edad, sexo, y registro
+
+DATOS DE PRUEBA:
+
+Ingrese la cantidad de conductores involucrados en accidentes: 4
+
+Conductor 1:
+Identificación del conductor: 1001
+Fecha del accidente (DD/MM/AAAA): 15/02/2024
+Ubicación del accidente: Cra 50 con Calle 80
+Año de nacimiento del conductor: 2000
+Sexo (1: Femenino, 2: Masculino): 2
+Placa del carro: ABC123
+Registro del carro (1: Medellín, 2: Otras ciudades): 1
+
+Conductor 2:
+Identificación del conductor: 1002
+Fecha del accidente (DD/MM/AAAA): 14/02/2024
+Ubicación del accidente: Autopista Sur
+Año de nacimiento del conductor: 1995
+Sexo (1: Femenino, 2: Masculino): 1
+Placa del carro: XYZ789
+Registro del carro (1: Medellín, 2: Otras ciudades): 2
+
+Conductor 3:
+Identificación del conductor: 1003
+Fecha del accidente (DD/MM/AAAA): 13/02/2024
+Ubicación del accidente: Centro Comercial
+Año de nacimiento del conductor: 1998
+Sexo (1: Femenino, 2: Masculino): 2
+Placa del carro: DEF456
+Registro del carro (1: Medellín, 2: Otras ciudades): 1
+
+Conductor 4:
+Identificación del conductor: 1004
+Fecha del accidente (DD/MM/AAAA): 12/02/2024
+Ubicación del accidente: Parque Arvi
+Año de nacimiento del conductor: 2002
+Sexo (1: Femenino, 2: Masculino): 2
+Placa del carro: GHI012
+Registro del carro (1: Medellín, 2: Otras ciudades): 2
+
+RESULTADO ESPERADO:
+Porcentaje de conductores menores de 25 años: 75.00%
+Porcentaje de conductores del sexo femenino: 25.00%
+Porcentaje de conductores masculinos entre 12 y 30 años: 75.00%
+Porcentaje de conductores con carros registrados fuera de Medellín: 50.00%
+
+================================================================================
+EX_8.PY - PROCESAR REGISTRO CLIENTES
+================================================================================
+Descripción: Filtra clientes según criterios específicos de sexo, altura, peso y color
+
+DATOS DE PRUEBA:
+
+Ingrese la cantidad de clientes a registrar: 4
+
+Cliente 1:
+Nombre: Laura Martínez
+Sexo (M/F): F
+Edad: 28
+Altura (metros): 1.70
+Peso (libras): 115
+Color ojos (1: Azules, 2: Castaños, 3: Otros): 1
+Color cabello (1: Castaño, 2: Rubio, 3: Otros): 2
+
+Cliente 2:
+Nombre: Miguel Rodríguez
+Sexo (M/F): M
+Edad: 32
+Altura (metros): 1.75
+Peso (libras): 190
+Color ojos (1: Azules, 2: Castaños, 3: Otros): 2
+Color cabello (1: Castaño, 2: Rubio, 3: Otros): 1
+
+Cliente 3:
+Nombre: Patricia García
+Sexo (M/F): F
+Edad: 25
+Altura (metros): 1.68
+Peso (libras): 110
+Color ojos (1: Azules, 2: Castaños, 3: Otros): 1
+Color cabello (1: Castaño, 2: Rubio, 3: Otros): 2
+
+Cliente 4:
+Nombre: Diego López
+Sexo (M/F): M
+Edad: 29
+Altura (metros): 1.72
+Peso (libras): 200
+Color ojos (1: Azules, 2: Castaños, 3: Otros): 2
+Color cabello (1: Castaño, 2: Rubio, 3: Otros): 3
+
+RESULTADO ESPERADO:
+a) Mujeres rubias, ojos azules (1.65-1.75m, <120lb):
+  - Laura Martínez
+  - Patricia García
+
+b) Hombres ojos castaños (>1.70m, 180-220lb):
+  - Miguel Rodríguez
+  - Diego López
+
+================================================================================
+EX_9.PY - CALCULAR FUNCION EXPONENCIAL
+================================================================================
+Descripción: Calcula e^x usando serie de Taylor
+
+DATOS DE PRUEBA 1 (Valor positivo pequeño):
+
+Ingrese el valor de x: 2
+Ingrese el número de términos para la serie: 10
+
+RESULTADO ESPERADO:
+Resultado de e^2 con 10 términos: 7.3890560989
+Valor real de e^2: 7.3890560989
+Error absoluto: ~0.0000000000
+
+DATOS DE PRUEBA 2 (Valor negativo):
+
+Ingrese el valor de x: -1
+Ingrese el número de términos para la serie: 15
+
+RESULTADO ESPERADO:
+Resultado de e^-1 con 15 términos: 0.3678794412
+Valor real de e^-1: 0.3678794412
+Error absoluto: ~0.0000000000
+
+DATOS DE PRUEBA 3 (Valor decimal):
+
+Ingrese el valor de x: 0.5
+Ingrese el número de términos para la serie: 20
+
+RESULTADO ESPERADO:
+Resultado de e^0.5 con 20 términos: 1.6487212707
+Valor real de e^0.5: 1.6487212707
+Error absoluto: ~0.0000000000
+
+
